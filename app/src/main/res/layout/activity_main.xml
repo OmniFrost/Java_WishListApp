@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="409dp"
+        android:layout_height="608dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnNewItem"
+            android:layout_width="171dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="13dp"
+            android:onClick="switchToAAA"
+            android:text="Lisää ostos" />
+
+        <ImageView
+            android:id="@+id/btnSortByTime"
+            android:layout_width="25dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/clockimg" />
+
+        <ImageView
+            android:id="@+id/btnSortByAlph"
+            android:layout_width="25dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/alphabetimg" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
